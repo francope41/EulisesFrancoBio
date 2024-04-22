@@ -45,30 +45,52 @@ function App() {
       </section>
 
       <section id="projects">
-        <br></br>
-        <br></br>
-        <h2>Projects</h2>
-        <div className="projects-grid">
+        <h1 className='ProjectTitle'>Projects</h1>
           {/* Project 1 */}
-          <div className="project-item">
-            <img src={`${process.env.PUBLIC_URL}/Project_Ref/Segmentation_Powerlines.jpg`} alt="Semantic Segmentation of vegetation" />
-            <p>Project 1 Description</p>
-          </div>
-          {/* Project 2 */}
-          <div className="project-item">
-          <img src={`${process.env.PUBLIC_URL}/Project_Ref/Segmentation_Powerlines2.jpg`} alt="Semantic Segmentation of vegetation" />
-            <p>Project 2 Description</p>
-          </div>
-          <div className="project-item">
-            <img src={`${process.env.PUBLIC_URL}/Project_Ref/Segmentation_Powerlines3.jpg`} alt="Semantic Segmentation of vegetation" />
-            <p>Project 1 Description</p>
-          </div>
-          {/* Project 3 */}
-          <div className="project-item">
-            <video controls width="250">
+          <div class="project-item">
+            <h3>Object Segmentation for Power Line Inspection</h3>
+            <div class="content">
+                <div class="text">
+                    <p>
+                      The objective of this project was to develop a sophisticated segmentation model capable of identifying vegetation encroachment around power lines. 
+                      As demonstrated in the first image, the model successfully categorizes vegetation into three distinct classes. The color green signifies "Clear_Vg," 
+                      indicating areas where vegetation is clear of the power lines. Yellow, labeled as "Unsafe_Vg," marks vegetation that is near power lines and needs to be addressed soon. 
+                      Lastly, red, designated as "Danger_Vg," highlights vegetation that poses an immediate threat due to its proximity to the power lines and requires urgent attention.
+                      <br></br>
+                      In the second and third images, we showcase an alternate application of the model that detects various components of power lines, including the power lines themselves, 
+                      insulators, cross arms, transformers, and power poles, alongside a general detection of vegetation. I spearheaded the labeling process, designed the model architecture, 
+                      and managed its deployment on both manned and unmanned drones.
+                    </p>
+                </div>
+                <div class="images">
+                    <img src={`${process.env.PUBLIC_URL}/Project_Ref/Segmentation_Powerlines.jpg`} alt="Semantic Segmentation of vegetation" />
+                    <img src={`${process.env.PUBLIC_URL}/Project_Ref/Segmentation_Powerlines2.jpg`} alt="Semantic Segmentation of vegetation" />
+                    <img src={`${process.env.PUBLIC_URL}/Project_Ref/Segmentation_Powerlines3.jpg`} alt="Semantic Segmentation of vegetation" class='centered' />
+                </div>
+            </div>
+        </div>
+        {/* Project 2 */}
+        <div class="project-item">
+            <h3>Image Classification for Vegetation</h3>
+            <div class="content">
+                <div class="text">
+                    <p>
+                      For this project an Android App was developed using android studio and Kotlin language, the purpose of the app was to be able to run 
+                      a classification AI model to determine what kind of tree or bush was being caputred and its classification either canopy or understory.
+                    </p>
+                </div>
+                <div class="images">
+                <video controls width="250">
               <source src={`${process.env.PUBLIC_URL}/Project_Ref/VegetationClassificationApp.mp4`} type="video/mp4" />
               Sorry, your browser does not support embedded videos.
             </video>
+                </div>
+            </div>
+        </div>
+        
+          {/* Project 3 */}
+          <div className="project-item">
+            
             <p>Project 2 Description</p>
           </div>
           {/* Project 4 */}
@@ -98,7 +120,6 @@ function App() {
           
 
           {/* Add more projects as needed */}
-        </div>
         
       </section>
 
