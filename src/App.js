@@ -95,11 +95,8 @@ function App() {
                       can be effectively integrated into mobile technology.
                     </p>
                 </div>
-                <div class="video">
-                <video controls width="250">
-              <source src={`${process.env.PUBLIC_URL}/Project_Ref/VegetationClassificationApp.mp4`} type="video/mp4" />
-              Sorry, your browser does not support embedded videos.
-            </video>
+                <div class="images">
+                  <img src={`${process.env.PUBLIC_URL}/Project_Ref/VegetationClassificationApp.gif`} alt="App for vegetation classification" class='centered'/>
                 </div>
             </div>
         </div>
@@ -127,16 +124,10 @@ function App() {
                     significant progress was made in enabling the vehicle to safely overtake other objects on the road.
                   </p>
               </div>
-              <div class="video">
-                <video controls width="250">
-              <source src={`${process.env.PUBLIC_URL}/Project_Ref/Qcar_SelfDriving.mp4`} type="video/mp4" />
-              Sorry, your browser does not support embedded videos.
-            </video>
-            <video controls width="250">
-              <source src={`${process.env.PUBLIC_URL}/Project_Ref/Qcar_Overtaking.mp4`} type="video/mp4" />
-              Sorry, your browser does not support embedded videos.
-            </video>
-                </div>
+              <div class="images">
+                <img src={`${process.env.PUBLIC_URL}/Project_Ref/Qcar_SelfDriving.gif`} alt="Self Driving Qcar" class='centered'/>
+                <img src={`${process.env.PUBLIC_URL}/Project_Ref/Qcar_Overtaking.gif`} alt="Qcar overtaking" class='centered'/>
+              </div>
           </div>
           </div>
 
@@ -158,11 +149,8 @@ function App() {
                     advanced gesture recognition technology with real-time vehicle control.
                   </p>
                 </div>
-                <div class="video">
-                  <video controls width="250">
-                <source src={`${process.env.PUBLIC_URL}/Project_Ref/Qcar_HandControl.mp4`} type="video/mp4" />
-                Sorry, your browser does not support embedded videos.
-              </video>
+                <div class="images">
+                <img src={`${process.env.PUBLIC_URL}/Project_Ref/Qcar_HandControl.gif`} alt="Hand gesture controller video" class='centered'/>
               </div>
             </div>
           </div>
@@ -184,8 +172,8 @@ function App() {
                   </p>
                 </div>
                 <div class="images">
-                    <img src={`${process.env.PUBLIC_URL}/Project_Ref/April_tag_Detection.png`} alt="Semantic Segmentation of vegetation" />
-                    <img src={`${process.env.PUBLIC_URL}/Project_Ref/UTSA_Formation.png`} alt="Semantic Segmentation of vegetation" />
+                    <img src={`${process.env.PUBLIC_URL}/Project_Ref/April_tag_Detection.png`} alt="April tag detection" />
+                    <img src={`${process.env.PUBLIC_URL}/Project_Ref/UTSA_Formation.png`} alt="UTSA Formation" />
                 </div>
             </div>
           </div>
