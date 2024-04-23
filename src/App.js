@@ -57,6 +57,7 @@ function App() {
                       indicating areas where vegetation is clear of the power lines. Yellow, labeled as "Unsafe_Vg," marks vegetation that is near power lines and needs to be addressed soon. 
                       Lastly, red, designated as "Danger_Vg," highlights vegetation that poses an immediate threat due to its proximity to the power lines and requires urgent attention.
                       <br></br>
+                      <br></br>
                       In the second and third images, we showcase an alternate application of the model that detects various components of power lines, including the power lines themselves, 
                       insulators, cross arms, transformers, and power poles, alongside a general detection of vegetation. I spearheaded the labeling process, designed the model architecture, 
                       and managed its deployment on both manned and unmanned drones.
@@ -75,11 +76,26 @@ function App() {
             <div class="content">
                 <div class="text">
                     <p>
-                      For this project an Android App was developed using android studio and Kotlin language, the purpose of the app was to be able to run 
-                      a classification AI model to determine what kind of tree or bush was being caputred and its classification either canopy or understory.
+                      For this project, an Android app was developed using Android Studio and the Kotlin programming language, aimed at classifying types of trees and bushes 
+                      into categories such as canopy or understory. I spearheaded the development of the model architecture, choosing to implement a straightforward Convolutional Neural
+                      Network (CNN) for its efficacy in image recognition tasks.
+                      <br></br>
+                      <br></br>
+                      The training data for the model was meticulously compiled from publicly available datasets, which my team and I carefully labeled to ensure accuracy and reliability.
+                      This foundational work underscored the robustness of our AI model.
+                      <br></br>
+                      <br></br>
+                      In practice, as demonstrated in the accompanying video, the app offers dual functionality: users can either upload images from their device's storage or utilize the 
+                      camera in real time to capture new photos for classification. Once an image is processed, the model not only categorizes it as either canopy or understory but also 
+                      indicates the specific class of the tree or bush. Importantly, it provides a confidence score for each classification, offering users insight into the model's reliability 
+                      for each result.
+                      <br></br>
+                      <br></br>
+                      This project highlights my capabilities in AI model design, data preparation, and application development within a real-world context, showcasing how machine learning 
+                      can be effectively integrated into mobile technology.
                     </p>
                 </div>
-                <div class="images">
+                <div class="video">
                 <video controls width="250">
               <source src={`${process.env.PUBLIC_URL}/Project_Ref/VegetationClassificationApp.mp4`} type="video/mp4" />
               Sorry, your browser does not support embedded videos.
@@ -87,48 +103,106 @@ function App() {
                 </div>
             </div>
         </div>
-        
+
           {/* Project 3 */}
           <div className="project-item">
-            
-            <p>Project 2 Description</p>
-          </div>
-          {/* Project 4 */}
-          <div className="project-item">
-            <video controls width="250">
+          <h3>Autonomous Driving</h3>
+          <div class="content">
+                <div class="text">
+                  <p>
+                    This project was dedicated to advancing autonomous driving technologies by developing multiple control systems for the 
+                    Quanser Vehicle (<a href="https://www.quanser.com/products/qcar/">Qcar</a>). The vehicle, equipped with a LIDAR 
+                    system and a 360-degree camera, provided comprehensive environmental feedback essential for navigation without human intervention.
+                    <br></br>
+                    <br></br>
+                    We utilized a Proportional-Integral-Derivative (PID) controller, leveraging the 360-degree camera to extract critical environmental data. This information facilitated the 
+                    calculation of deviations or errors, which were then fed into the controller. The PID system effectively kept the vehicle within its lane by adjusting its steering based on the calculated errors.
+                    <br></br>
+                    <br></br>
+                    Further enhancements included the integration of object detection algorithms that identified pedestrians, animals, other vehicles, and traffic signs. 
+                    This enabled the Qcar to adhere to driving regulations autonomously, allowing for safe operations like stopping and collision avoidance when necessary.
+                    <br></br>
+                    <br></br>
+                    The second video demonstrates our preliminary work on an overtaking control system. Although this feature was not fully completed due to time constraints, 
+                    significant progress was made in enabling the vehicle to safely overtake other objects on the road.
+                  </p>
+              </div>
+              <div class="video">
+                <video controls width="250">
               <source src={`${process.env.PUBLIC_URL}/Project_Ref/Qcar_SelfDriving.mp4`} type="video/mp4" />
               Sorry, your browser does not support embedded videos.
             </video>
-            <p>Project 2 Description</p>
-          </div>
-          {/* Project 5 */}
-          <div className="project-item">
             <video controls width="250">
               <source src={`${process.env.PUBLIC_URL}/Project_Ref/Qcar_Overtaking.mp4`} type="video/mp4" />
               Sorry, your browser does not support embedded videos.
             </video>
-            <p>Project 2 Description</p>
+                </div>
           </div>
+          </div>
+
+          {/* Project 4 */}
+          <div className="project-item">
+            <h3>Hand Gesture Controller</h3>
+            <div class="content">
+                <div class="text">
+                  <p>
+                    This project was centered on developing an innovative remote controller utilizing hand gesture detection technology. By employing the MediaPipe Hand Landmarker from Google,
+                    we successfully tracked key points on the hands to create a comprehensive dataset. This dataset defined how various hand signs corresponded to the detected points.
+                    <br></br>
+                    <br></br>
+                    Utilizing a simple Convolutional Neural Network (CNN) structure, we trained the model on this dataset to accurately recognize the hand signs being displayed. 
+                    These recognized signs were then converted into commands for operating the Qcar.
+                    <br></br>
+                    <br></br>
+                    As demonstrated in the accompanying video, we achieved seamless control of the vehicle using just hand gestures, showcasing the effectiveness of integrating 
+                    advanced gesture recognition technology with real-time vehicle control.
+                  </p>
+                </div>
+                <div class="video">
+                  <video controls width="250">
+                <source src={`${process.env.PUBLIC_URL}/Project_Ref/Qcar_HandControl.mp4`} type="video/mp4" />
+                Sorry, your browser does not support embedded videos.
+              </video>
+              </div>
+            </div>
+          </div>
+
           {/* Project 5 */}
           <div className="project-item">
-            <video controls width="250">
-              <source src={`${process.env.PUBLIC_URL}/Project_Ref/Qcar_HandControl.mp4`} type="video/mp4" />
-              Sorry, your browser does not support embedded videos.
-            </video>
-            <p>Project 2 Description</p>
+            <h3>Swarm Algorithm Deployment</h3>
+            <div class="content">
+                <div class="text">
+                  <p>
+                  This project focused on the development and deployment of sophisticated swarm algorithms tailored for formation movement, 
+                  obstacle avoidance, and search and secure operations. Utilizing Elisa-3 robots, I spearheaded the deployment of a swarm that could dynamically form letters. 
+                  The formation adapted based on the number of robots available, automatically adjusting the points of each letter to accommodate all units involved.
+                  <br></br>
+                  <br></br>
+                  To optimize the robots' path to formation, each robot calculated and moved towards the nearest designated point from its starting location. 
+                  This process was governed by a dual repulsion and attraction algorithm—robots were drawn towards their end goals while simultaneously repelling from one another. 
+                  This dual-force approach ensured that the robots navigated smoothly and efficiently, achieving the desired formations without any collisions.
+                  </p>
+                </div>
+                <div class="images">
+                    <img src={`${process.env.PUBLIC_URL}/Project_Ref/April_tag_Detection.png`} alt="Semantic Segmentation of vegetation" />
+                    <img src={`${process.env.PUBLIC_URL}/Project_Ref/UTSA_Formation.png`} alt="Semantic Segmentation of vegetation" />
+                </div>
+            </div>
           </div>
-          
 
-          {/* Add more projects as needed */}
-        
       </section>
 
       <section id="skills">
         <h2>Skills</h2>
         <div className="skills-list">
-          <div className="skill-item">C# (3 years)</div>
-          <div className="skill-item">Python (3 years)</div>
-          <div className="skill-item">HTML & CSS (3 years)</div>
+          <div className="skill-item">Bilingual English Spanish-Native</div>
+          <div className="skill-item">Systems Administration</div>
+          <div className="skill-item">Advanced Troubleshooting Skills</div>
+          <div className="skill-item">Collaborative Working</div>
+          <div className="skill-item">Continuous Learning</div>
+          <div className="skill-item">C# (4 years)</div>
+          <div className="skill-item">Python (4 years)</div>
+          <div className="skill-item">HTML & CSS (4 years)</div>
           <div className="skill-item">SQL (2 years)</div>
           <div className="skill-item">Linux</div>
           <div className="skill-item">Linux Terminal</div>

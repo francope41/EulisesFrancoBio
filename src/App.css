@@ -104,6 +104,7 @@ section {
   justify-content: space-between;
   align-items: flex-start; /* Aligns content at the top */
   width: 100%;
+  height: auto;
 }
 .text {
   flex: 1; /* Takes up half of the container */
@@ -119,7 +120,7 @@ section {
 
 .images img {
   width: 100%; /* Adjust based on your design requirements */
-  max-width: 400px; /* Limits image width */
+  max-width: 550px; /* Limits image width */
   margin-bottom: 10px; /* Adds spacing between images */
 }
 
