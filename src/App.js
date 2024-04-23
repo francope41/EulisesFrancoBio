@@ -184,6 +184,7 @@ function App() {
         <h2>Skills</h2>
         <div className="skills-list">
           <div className="skill-item">Bilingual English Spanish-Native</div>
+          <div className="skill-item">Github</div>
           <div className="skill-item">Systems Administration</div>
           <div className="skill-item">Advanced Troubleshooting Skills</div>
           <div className="skill-item">Collaborative Working</div>
