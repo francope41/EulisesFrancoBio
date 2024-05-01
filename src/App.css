@@ -120,7 +120,7 @@ section {
 }
 .text {
   flex: 1; /* Takes up half of the container */
-  padding-right: 0px; /* Adds spacing between text and images */
+  padding: 35px; /* Adds spacing between text and images */
   text-align: justify;
 }
 .images {
@@ -128,11 +128,14 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center; /* Centers the images in their container */
+  padding-top: 50px;
+  padding-right: 35px;
+  padding-left: 20px;
 }
 
 .images img {
-  width: 50%; /* Adjust based on your design requirements */
-  max-width: 550px; /* Limits image width */
+  width: 100%; /* Adjust based on your design requirements */
+  max-width: 800px; /* Limits image width */
 }
 
 .images .centered {
